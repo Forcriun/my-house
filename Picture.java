@@ -57,15 +57,20 @@ public class Picture
         field.changeSize(700);
         field.makeVisible();
         
+        
+    }
+
+    public void moveSun(){
+    
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.changeSize(80);
         sun.makeVisible();
-        
+        sun.slowMoveVertical(60);
         
     }
-
+    
     /**
      * Change this picture to black/white display
      */
